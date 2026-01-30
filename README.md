@@ -22,3 +22,14 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+```bash
+brew install postgresql
+brew services start postgresql
+
+
+rails g scaffold Post title:string description:text thumbnail_url:string video_url:string pro:boolean
+rails db:migrate
+rails s
+```
